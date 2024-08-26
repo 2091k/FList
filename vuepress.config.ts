@@ -39,7 +39,7 @@ export default defineUserConfig({
         // 仓库所有者的用户名
         user: "2091k",
         // 仓库所有者的仓库名
-        repository: "down"
+        repository: "APP"
       }),
     },
     {
