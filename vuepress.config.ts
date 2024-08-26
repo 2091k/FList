@@ -40,6 +40,11 @@ export default defineUserConfig({
       // 如果你使用的不是 cloudflare Pages 部署需要删掉这一行，因为如果不是cloudflare Pages部署，这个代理是无法正常工作的
       downProxy: cloudflarePagesDownProxy(),
     },
+        {
+      mountPath: "/down",
+      analysis: githubReleasesFilesAnalysis({ user: "2091k", repository: "down" }),
+      downProxy: cloudflarePagesDownProxy(),
+    },
 
     
     // ... 可以配置多个挂载路径和仓库，以此类推
