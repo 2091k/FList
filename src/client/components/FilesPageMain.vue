@@ -25,7 +25,7 @@ const content = computed(()=>frontmatter.value.flistData?.content);
       <FContent v-if="content" :content="content" style="padding: 1rem"></FContent>
     </div>
     <div class="footer">
-      <FLink to="https://github.com/jianjianai/FList">由 FList 强力驱动</FLink>
+      <FLink to="https://2091k.cn">一叶知秋-魏无羡@2024</FLink>
     </div>
 <!--    消息弹出框-->
     <Notification></Notification>
