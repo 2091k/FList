@@ -31,17 +31,7 @@ export default defineUserConfig({
   shouldPrefetch: true,
   // 主题配置 FileList 是 vuepress 的一个主题，文件展示的功能全部由这个主题提供。
   theme: FileList([
-    {
-      // 挂载路径
-      mountPath: "/APP",
-      // 文件解析器，这里使用githubReleasesFilesAnalysis,可以解析github的release文件
-      analysis: githubReleasesFilesAnalysis({
-        // 仓库所有者的用户名
-        user: "2091k",
-        // 仓库所有者的仓库名
-        repository: "down"
-      }),
-    },
+
     {
       mountPath: "/",
       analysis: githubReleasesFilesAnalysis({ user: "2091k", repository: "FList" }),
